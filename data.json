@@ -1,0 +1,888 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "email": "admin@virtuelle.co.za",
+      "name": "Virtuelle Admin Staff",
+      "role": "admin"
+    },
+    {
+      "id": "u-student1",
+      "email": "johndoe@gmail.com",
+      "name": "John Doe",
+      "role": "student"
+    },
+    {
+      "id": "u-student2",
+      "email": "sarahsmith@gmail.com",
+      "name": "Sarah Smith",
+      "role": "student"
+    },
+    {
+      "id": "u-student3",
+      "email": "pieterv@gmail.com",
+      "name": "Pieter van der Merwe",
+      "role": "student"
+    },
+    {
+      "id": "u-parent1",
+      "email": "parent@gmail.com",
+      "name": "Robert Doe",
+      "role": "parent"
+    }
+  ],
+  "students": [
+    {
+      "id": "s-john",
+      "userId": "u-student1",
+      "name": "John Doe",
+      "email": "johndoe@gmail.com",
+      "grade": "Grade 10",
+      "status": "active",
+      "chosenSubjects": [
+        "English Home Language",
+        "Mathematics",
+        "Physical Science",
+        "IT"
+      ],
+      "enrolledDate": "2026-01-15",
+      "parentId": "u-parent1",
+      "applicationFormSubmitted": true,
+      "documentsSubmitted": true,
+      "tuitionFee": 2600,
+      "registrationFeePaid": true,
+      "studentCardPaid": true
+    },
+    {
+      "id": "s-sarah",
+      "userId": "u-student2",
+      "name": "Sarah Smith",
+      "email": "sarahsmith@gmail.com",
+      "grade": "Grade 11",
+      "status": "pending",
+      "chosenSubjects": [
+        "English Home Language",
+        "Mathematical Literacy",
+        "Business Studies",
+        "Economics"
+      ],
+      "enrolledDate": "2026-07-20",
+      "applicationFormSubmitted": true,
+      "documentsSubmitted": false,
+      "tuitionFee": 2800,
+      "registrationFeePaid": false,
+      "studentCardPaid": false
+    },
+    {
+      "id": "s-pieter",
+      "userId": "u-student3",
+      "name": "Pieter van der Merwe",
+      "email": "pieterv@gmail.com",
+      "grade": "Grade 12",
+      "status": "active",
+      "chosenSubjects": [
+        "Afrikaans FAL",
+        "Mathematics",
+        "Life Science",
+        "AI",
+        "Robotics"
+      ],
+      "enrolledDate": "2026-01-10",
+      "parentId": "u-parent1",
+      "applicationFormSubmitted": true,
+      "documentsSubmitted": true,
+      "tuitionFee": 3000,
+      "registrationFeePaid": true,
+      "studentCardPaid": true
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub-eng",
+      "name": "English Home Language",
+      "grade": "Grade 10-12",
+      "description": "Developing advanced communication, comprehension, and literature analysis skills.",
+      "modules": [
+        {
+          "id": "eng-m1",
+          "title": "Module 1: Shakespearean Drama (Macbeth)",
+          "description": "Study of themes, characters, and dramatic techniques in Shakespeare's classic play.",
+          "resources": [
+            {
+              "name": "Shakespeare Literary Analysis & Macbeth Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Act 1 & 2 Dramatic Devices Activity Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "eng-m2",
+          "title": "Module 2: Creative Essay & Rhetorical Analysis",
+          "description": "Expository, narrative, and argumentative essay structures and persuasive rhetoric.",
+          "resources": [
+            {
+              "name": "CAPS Creative Writing Masterclass Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Argumentative Essay & Rhetoric Activity Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "eng-m3",
+          "title": "Module 3: Language Structures & Prescribed Poetry",
+          "description": "Comprehensive study of unseen and prescribed poetry alongside formal language mechanics.",
+          "resources": [
+            {
+              "name": "Prescribed Poetry & Language Mechanics Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Figures of Speech & Grammar Practice Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sub-math",
+      "name": "Mathematics",
+      "grade": "Grade 10-12",
+      "description": "Core algebraic operations, functions, trigonometry, and analytical geometry.",
+      "modules": [
+        {
+          "id": "math-m1",
+          "title": "Module 1: Quadratic Equations & Functions",
+          "description": "Solving quadratics, graphing parabolas, and applications in word problems.",
+          "resources": [
+            {
+              "name": "Algebraic Functions & Quadratics Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Quadratic Equations & Factoring Activity Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "math-m2",
+          "title": "Module 2: Analytical Geometry & Trigonometric Rules",
+          "description": "Distance formula, gradient calculations, sine/cosine rules, and trigonometric identities.",
+          "resources": [
+            {
+              "name": "Analytical Geometry & Trigonometry Guide.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Trig Reduction & Coordinate Geometry Activity.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "math-m3",
+          "title": "Module 3: Financial Maths & Compound Interest",
+          "description": "Annuities, depreciation, effective interest rates, and financial planning.",
+          "resources": [
+            {
+              "name": "CAPS Financial Mathematics Masterclass Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Compound Interest & Annuities Practice Task.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sub-phys",
+      "name": "Physical Sciences",
+      "grade": "Grade 10-12",
+      "description": "Physics mechanics, vector kinematics, stoichiometry, and chemical reaction dynamics.",
+      "modules": [
+        {
+          "id": "phys-m1",
+          "title": "Module 1: Newtonian Mechanics & Vector Kinematics",
+          "description": "Newton's laws of motion, free-body force diagrams, and linear momentum conservation.",
+          "resources": [
+            {
+              "name": "Newtonian Mechanics & Kinematics Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Vector Resolution & Forces Activity Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "phys-m2",
+          "title": "Module 2: Chemical Change & Stoichiometry",
+          "description": "Molar mass, empirical formula determination, reaction yields, and balancing equations.",
+          "resources": [
+            {
+              "name": "Stoichiometry & Reaction Dynamics Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Molar Calculations & Reaction Yields Worksheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sub-it",
+      "name": "IT (Information Technology)",
+      "grade": "Grade 10-12",
+      "description": "Introduction to object-oriented programming, data structures, and database systems.",
+      "modules": [
+        {
+          "id": "it-m1",
+          "title": "Module 1: Fundamentals of OOP",
+          "description": "Understanding classes, objects, encapsulation, and inheritance in programming.",
+          "resources": [
+            {
+              "name": "Object Oriented Programming Guide.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Class Design & Encapsulation Activity Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "it-m2",
+          "title": "Module 2: Relational Databases & SQL Syntax",
+          "description": "Database normalization, primary/foreign keys, and crafting complex SQL queries.",
+          "resources": [
+            {
+              "name": "Relational Databases & SQL Syntax Masterclass.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "SQL Queries & Database Normalization Worksheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sub-ai",
+      "name": "AI (Artificial Intelligence)",
+      "grade": "Grade 10-12",
+      "description": "Modern concepts of machine learning, neural networks, ethics in AI, and prompt engineering.",
+      "modules": [
+        {
+          "id": "ai-m1",
+          "title": "Module 1: History & Mechanics of Neural Networks",
+          "description": "How neurons form networks, backpropagation, and deep learning algorithms.",
+          "resources": [
+            {
+              "name": "AI & Deep Learning Fundamentals Handbook.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Perceptron & Backpropagation Activity Sheet.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        },
+        {
+          "id": "ai-m2",
+          "title": "Module 2: Prompt Engineering & Generative AI Ethics",
+          "description": "Mastering zero-shot/few-shot prompts, model alignment, and ethical AI deployment.",
+          "resources": [
+            {
+              "name": "Prompt Engineering & LLM Architecture Guide.pdf",
+              "url": "#",
+              "type": "handbook"
+            },
+            {
+              "name": "Ethical AI & Generative Prompting Activity.pdf",
+              "url": "#",
+              "type": "activity"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "q-macbeth",
+      "title": "Macbeth Act 1 Comprehension Test",
+      "subjectId": "sub-eng",
+      "grade": "Grade 10",
+      "description": "Assessment covering character motivations, prophecies, and key literary devices in Act 1 of Macbeth.",
+      "questions": [
+        {
+          "id": "q-m1",
+          "question": "Who are the first characters to appear in Macbeth Act 1, Scene 1?",
+          "type": "multiple-choice",
+          "options": [
+            "Macbeth and Banquo",
+            "The Three Witches",
+            "King Duncan and Malcolm",
+            "Lady Macbeth and her gentlewoman"
+          ],
+          "correctAnswer": "The Three Witches"
+        },
+        {
+          "id": "q-m2",
+          "question": "What title is bestowed upon Macbeth as a reward for his battlefield heroics in Act 1?",
+          "type": "multiple-choice",
+          "options": [
+            "Thane of Glamis",
+            "Thane of Cawdor",
+            "Prince of Cumberland",
+            "King of Scotland"
+          ],
+          "correctAnswer": "Thane of Cawdor"
+        },
+        {
+          "id": "q-m3",
+          "question": "Explain the significance of the phrase 'Fair is foul, and foul is fair'. How does it establish the mood and major themes of the play?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-macbeth-act2",
+      "title": "Macbeth Act 2 & Soliloquy In-Depth Analysis",
+      "subjectId": "sub-eng",
+      "grade": "Grade 10",
+      "description": "Evaluates understanding of the 'Dagger Soliloquy', psychological guilt, and dramatic irony.",
+      "questions": [
+        {
+          "id": "q-m21",
+          "question": "What object does Macbeth hallucinate prior to entering King Duncan's bedchamber?",
+          "type": "multiple-choice",
+          "options": [
+            "A bloody crown",
+            "A hovering dagger",
+            "A ghostly specter",
+            "An iron scepter"
+          ],
+          "correctAnswer": "A hovering dagger"
+        },
+        {
+          "id": "q-m22",
+          "question": "Analyze Lady Macbeth's line: 'A little water clears us of this deed.' How does this contrast with Macbeth's reaction to the blood on his hands?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-rhetoric",
+      "title": "Creative Writing & Rhetorical Devices Task",
+      "subjectId": "sub-eng",
+      "grade": "Grade 10",
+      "description": "Tests knowledge of ethos, pathos, logos, and persuasive essay structure based on Module 2.",
+      "questions": [
+        {
+          "id": "q-rh1",
+          "question": "Which rhetorical appeal relies on establishing the speaker's credibility, character, and moral standing?",
+          "type": "multiple-choice",
+          "options": [
+            "Pathos",
+            "Ethos",
+            "Logos",
+            "Kairos"
+          ],
+          "correctAnswer": "Ethos"
+        },
+        {
+          "id": "q-rh2",
+          "question": "Formulate a strong 2-sentence thesis statement arguing for or against the integration of digital technology in physical classrooms.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-quadratics",
+      "title": "Quadratic Equations Diagnostic Quiz",
+      "subjectId": "sub-math",
+      "grade": "Grade 10",
+      "description": "Covers factoring, completing the square, and using the quadratic formula.",
+      "questions": [
+        {
+          "id": "q-q1",
+          "question": "What are the roots of the equation x^2 - 5x + 6 = 0?",
+          "type": "multiple-choice",
+          "options": [
+            "x = -2, -3",
+            "x = 2, 3",
+            "x = 1, 6",
+            "x = -1, -6"
+          ],
+          "correctAnswer": "x = 2, 3"
+        },
+        {
+          "id": "q-q2",
+          "question": "State the quadratic formula used to solve ax^2 + bx + c = 0.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-trig-geom",
+      "title": "Analytical Geometry & Trigonometric Rules Assessment",
+      "subjectId": "sub-math",
+      "grade": "Grade 10",
+      "description": "Based on Module 2: Tests distance formula, gradient calculations, and sine rule applications.",
+      "questions": [
+        {
+          "id": "q-tg1",
+          "question": "What is the distance between points A(1, 2) and B(4, 6) in the Cartesian plane?",
+          "type": "multiple-choice",
+          "options": [
+            "3 units",
+            "4 units",
+            "5 units",
+            "7 units"
+          ],
+          "correctAnswer": "5 units"
+        },
+        {
+          "id": "q-tg2",
+          "question": "Derive the coordinates of the midpoint M for segment connecting P(-2, 8) and Q(4, 2).",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-physics-newton",
+      "title": "Newtonian Mechanics & Forces Physics Test",
+      "subjectId": "sub-phys",
+      "grade": "Grade 10",
+      "description": "Covers Newton's 1st, 2nd, and 3rd laws, free-body force diagrams, and acceleration.",
+      "questions": [
+        {
+          "id": "q-p1",
+          "question": "If a net force of 20 N acts on a 4 kg mass, what acceleration is produced?",
+          "type": "multiple-choice",
+          "options": [
+            "5 m/s²",
+            "80 m/s²",
+            "0.2 m/s²",
+            "16 m/s²"
+          ],
+          "correctAnswer": "5 m/s²"
+        },
+        {
+          "id": "q-p2",
+          "question": "Explain Newton's First Law of Motion and provide a real-life example of inertia.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-chemistry-stoich",
+      "title": "Stoichiometry & Molar Mass Calculations Task",
+      "subjectId": "sub-phys",
+      "grade": "Grade 10",
+      "description": "Tests molar conversion, empirical formula calculation, and chemical reaction yield.",
+      "questions": [
+        {
+          "id": "q-c1",
+          "question": "What is the molar mass of Water (H2O)? (H = 1 g/mol, O = 16 g/mol)",
+          "type": "multiple-choice",
+          "options": [
+            "17 g/mol",
+            "18 g/mol",
+            "32 g/mol",
+            "16 g/mol"
+          ],
+          "correctAnswer": "18 g/mol"
+        },
+        {
+          "id": "q-c2",
+          "question": "Calculate the number of moles in 44 grams of Carbon Dioxide (CO2). Show your formula and working.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-it-oop",
+      "title": "OOP Principles & Class Design Coding Task",
+      "subjectId": "sub-it",
+      "grade": "Grade 10",
+      "description": "Evaluates encapsulation, object instantiation, constructors, and access modifiers.",
+      "questions": [
+        {
+          "id": "q-it1",
+          "question": "Which OOP principle restricts direct access to an object's internal variable fields?",
+          "type": "multiple-choice",
+          "options": [
+            "Inheritance",
+            "Encapsulation",
+            "Polymorphism",
+            "Abstraction"
+          ],
+          "correctAnswer": "Encapsulation"
+        },
+        {
+          "id": "q-it2",
+          "question": "Write a small pseudocode or Java class definition for a 'BankAccount' object containing a private balance attribute and a public deposit method.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-it-sql",
+      "title": "Relational Database Normalization & SQL Queries Test",
+      "subjectId": "sub-it",
+      "grade": "Grade 10",
+      "description": "Tests SELECT, WHERE, JOIN statements and primary vs foreign key relationships.",
+      "questions": [
+        {
+          "id": "q-sql1",
+          "question": "Which SQL clause is used to filter records based on specific criteria?",
+          "type": "multiple-choice",
+          "options": [
+            "GROUP BY",
+            "ORDER BY",
+            "WHERE",
+            "HAVING"
+          ],
+          "correctAnswer": "WHERE"
+        },
+        {
+          "id": "q-sql2",
+          "question": "Explain why primary keys are necessary in relational databases and how they differ from foreign keys.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "q-ai-nn",
+      "title": "Neural Networks & AI Ethics Masterclass Task",
+      "subjectId": "sub-ai",
+      "grade": "Grade 10",
+      "description": "Covers artificial neurons, backpropagation algorithm, and responsible AI practices.",
+      "questions": [
+        {
+          "id": "q-ai1",
+          "question": "Which activation function converts input values into a probability output between 0 and 1?",
+          "type": "multiple-choice",
+          "options": [
+            "ReLU",
+            "Sigmoid",
+            "Linear",
+            "Step"
+          ],
+          "correctAnswer": "Sigmoid"
+        },
+        {
+          "id": "q-ai2",
+          "question": "Discuss two key ethical challenges associated with training large language models on web datasets.",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv-1",
+      "studentId": "s-john",
+      "studentName": "John Doe",
+      "description": "Once-off Enrollment Registration Fee",
+      "amount": 1000,
+      "dueDate": "2026-01-30",
+      "status": "paid",
+      "type": "registration",
+      "paidAt": "2026-01-20"
+    },
+    {
+      "id": "inv-2",
+      "studentId": "s-john",
+      "studentName": "John Doe",
+      "description": "Student Card Setup Fee",
+      "amount": 275,
+      "dueDate": "2026-01-30",
+      "status": "paid",
+      "type": "student_card",
+      "paidAt": "2026-01-20"
+    },
+    {
+      "id": "inv-3",
+      "studentId": "s-john",
+      "studentName": "John Doe",
+      "description": "Grade 10 Homeschool Tuition Fee - July 2026",
+      "amount": 2600,
+      "dueDate": "2026-07-01",
+      "status": "paid",
+      "type": "monthly_tuition",
+      "paidAt": "2026-07-01"
+    },
+    {
+      "id": "inv-4",
+      "studentId": "s-pieter",
+      "studentName": "Pieter van der Merwe",
+      "description": "Grade 12 Homeschool Tuition Fee - July 2026",
+      "amount": 3000,
+      "dueDate": "2026-07-01",
+      "status": "pending",
+      "type": "monthly_tuition"
+    },
+    {
+      "id": "inv-5",
+      "studentId": "s-sarah",
+      "studentName": "Sarah Smith",
+      "description": "Once-off Enrollment Registration Fee (Pending Verification)",
+      "amount": 1000,
+      "dueDate": "2026-08-15",
+      "status": "pending",
+      "type": "registration"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-1",
+      "studentId": "s-john",
+      "name": "John Doe - Certified ID Copy",
+      "type": "id_parent",
+      "status": "verified",
+      "fileSize": "1.2 MB",
+      "uploadedAt": "2026-01-14"
+    },
+    {
+      "id": "doc-2",
+      "studentId": "s-john",
+      "name": "John Doe - Birth Certificate",
+      "type": "birth_certificate",
+      "status": "verified",
+      "fileSize": "850 KB",
+      "uploadedAt": "2026-01-14"
+    },
+    {
+      "id": "doc-3",
+      "studentId": "s-pieter",
+      "name": "Pieter van der Merwe - 2025 Grade 11 Report Card",
+      "type": "report_card",
+      "status": "verified",
+      "fileSize": "2.1 MB",
+      "uploadedAt": "2026-01-08"
+    }
+  ],
+  "submissions": [],
+  "teamsSessions": [
+    {
+      "id": "teams-1",
+      "subjectId": "sub-eng",
+      "subjectName": "English Home Language",
+      "grade": "Grade 10",
+      "title": "Macbeth Act 2 In-Depth Analysis",
+      "date": "2026-07-22",
+      "time": "10:00 - 11:30",
+      "tutorName": "Mrs. Sandra van Wyk",
+      "joinUrl": "https://teams.microsoft.com/l/meetup-join/mock-virtuelle-academique"
+    },
+    {
+      "id": "teams-2",
+      "subjectId": "sub-math",
+      "subjectName": "Mathematics",
+      "grade": "Grade 10",
+      "title": "Quadratic Functions & Parabola Plotting Workshop",
+      "date": "2026-07-23",
+      "time": "14:00 - 15:30",
+      "tutorName": "Mr. Eugene Coetzee",
+      "joinUrl": "https://teams.microsoft.com/l/meetup-join/mock-virtuelle-academique"
+    },
+    {
+      "id": "teams-3",
+      "subjectId": "sub-it",
+      "subjectName": "IT",
+      "grade": "Grade 10",
+      "title": "Understanding Classes and Constructors",
+      "date": "2026-07-24",
+      "time": "09:00 - 10:30",
+      "tutorName": "Dr. Alistair Mokoena",
+      "joinUrl": "https://teams.microsoft.com/l/meetup-join/mock-virtuelle-academique"
+    }
+  ],
+  "applicationForms": [
+    {
+      "studentId": "s-john",
+      "form": {
+        "learnerInfo": {
+          "fullName": "John",
+          "surname": "Doe",
+          "nickname": "Johnny",
+          "dateOfBirth": "2010-05-14",
+          "idNumber": "1005145028081",
+          "nationality": "South African",
+          "church": "Methodist",
+          "gender": "Male",
+          "homeLanguage": "English",
+          "preferredLanguage": "English",
+          "cellphone": "0823456789",
+          "email": "johndoe@gmail.com",
+          "entryDate": "2026-01-15",
+          "gradeIn2025_2026": "Grade 10"
+        },
+        "familyInfo": {
+          "familyStatus": "Both Parents",
+          "guardianType": "Guardian",
+          "parentsPassed": [
+            "None"
+          ]
+        },
+        "medicalInfo": {
+          "chronicIllness": "None",
+          "allergies": "Peanuts",
+          "medication": "None",
+          "medicalAidInfo": "Discovery Health - 102930491"
+        },
+        "nextOfKin": {
+          "name": "Jane Smith",
+          "contact": "0712345678",
+          "relationship": "Aunt"
+        },
+        "parent1": {
+          "title": "Mr",
+          "fullNames": "Robert",
+          "surname": "Doe",
+          "initials": "RD",
+          "nickname": "Rob",
+          "idNumber": "7508205034089",
+          "preferredLanguage": "English",
+          "cellNumber": "0839876543",
+          "homeNumber": "0112345678",
+          "faxNumber": "",
+          "email": "parent@gmail.com",
+          "homeAddress": "42 Weaver Avenue, Montana, Pretoria, 0182",
+          "postalAddress": "P.O. Box 904, Pretoria, 0001",
+          "occupationStatus": "Full Time",
+          "occupation": "Engineer",
+          "employer": "Pretoria Construction",
+          "officeNumber": "0123456789",
+          "workAddress": "99 Church Street, Pretoria",
+          "livesWithParent": "Yes"
+        },
+        "accountResponsibility": {
+          "responsibleParty": "Parent 1"
+        },
+        "tuitionAgreement": {
+          "parent1Name": "Robert Doe",
+          "parent2Name": "",
+          "monthlyAmount": 2600,
+          "penaltyAcknowledged": true,
+          "termsAccepted": true,
+          "parent1Signature": "Robert Doe",
+          "parent2Signature": "",
+          "date": "2026-01-14"
+        }
+      }
+    },
+    {
+      "studentId": "s-pieter",
+      "form": {
+        "learnerInfo": {
+          "fullName": "Pieter",
+          "surname": "van der Merwe",
+          "nickname": "Piet",
+          "dateOfBirth": "2008-09-22",
+          "idNumber": "0809225032087",
+          "nationality": "South African",
+          "church": "NG Kerk",
+          "gender": "Male",
+          "homeLanguage": "Afrikaans",
+          "preferredLanguage": "Afrikaans",
+          "cellphone": "0798765432",
+          "email": "pieterv@gmail.com",
+          "entryDate": "2026-01-10",
+          "gradeIn2025_2026": "Grade 12"
+        },
+        "familyInfo": {
+          "familyStatus": "Both Parents",
+          "guardianType": "Guardian",
+          "parentsPassed": [
+            "None"
+          ]
+        },
+        "medicalInfo": {
+          "chronicIllness": "Asthma",
+          "allergies": "Dust",
+          "medication": "Ventolin Inhaler",
+          "medicalAidInfo": "Bonitas - 9948574"
+        },
+        "nextOfKin": {
+          "name": "Andries van der Merwe",
+          "contact": "0812345678",
+          "relationship": "Uncle"
+        },
+        "parent1": {
+          "title": "Mr",
+          "fullNames": "Robert",
+          "surname": "Doe",
+          "initials": "RD",
+          "nickname": "Rob",
+          "idNumber": "7508205034089",
+          "preferredLanguage": "English",
+          "cellNumber": "0839876543",
+          "homeNumber": "0112345678",
+          "faxNumber": "",
+          "email": "parent@gmail.com",
+          "homeAddress": "42 Weaver Avenue, Montana, Pretoria, 0182",
+          "postalAddress": "P.O. Box 904, Pretoria, 0001",
+          "occupationStatus": "Full Time",
+          "occupation": "Engineer",
+          "employer": "Pretoria Construction",
+          "officeNumber": "0123456789",
+          "workAddress": "99 Church Street, Pretoria",
+          "livesWithParent": "Yes"
+        },
+        "accountResponsibility": {
+          "responsibleParty": "Parent 1"
+        },
+        "tuitionAgreement": {
+          "parent1Name": "Robert Doe",
+          "parent2Name": "",
+          "monthlyAmount": 3000,
+          "penaltyAcknowledged": true,
+          "termsAccepted": true,
+          "parent1Signature": "Robert Doe",
+          "parent2Signature": "",
+          "date": "2026-01-08"
+        }
+      }
+    }
+  ],
+  "paymentRemindersSent": []
+}

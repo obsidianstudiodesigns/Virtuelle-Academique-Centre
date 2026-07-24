@@ -1,0 +1,6 @@
+{
+  "name": "Virtuelle Academique Centre",
+  "description": "An online expert tutoring and homeschooling centre where students can study, take tests, and complete tasks online, while parents track progress and staff manage enrollments and finance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
